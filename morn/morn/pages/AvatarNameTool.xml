@@ -1,0 +1,6 @@
+<View width="810" height="380" sceneColor="0xffffff" layers="2,1,0,0,第 2 层;1,1,0,1,第 1 层">
+  <Image skin="png.comp.blank" x="0" y="0" layer="1" width="810" height="380"/>
+  <Label text="初始数字：" styleSkin="png.comp.label" x="13" y="14" layer="2"/>
+  <TextInput skin="png.comp.textinput" x="74" y="13" layer="2" var="num_it" width="643" height="22" text="0" restrict="0-9"/>
+  <Button label="重置" skin="png.comp.button" x="725" y="12" layer="2" var="reset_btn"/>
+</View>

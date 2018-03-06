@@ -1,0 +1,8 @@
+<View width="810" height="380" sceneColor="0xffffff" layers="1,1,0,0,第 1 层">
+  <Label text="目标文件夹：" styleSkin="png.comp.label" x="12" y="47" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="85" y="46" layer="1" width="625" height="22" var="target_it" text="E:/Projects/SmhWorld/trunk/05 源代码/网页端/Main/SmhWorld/bin/assets/role"/>
+  <Label text="原始文件夹：" styleSkin="png.comp.label" x="12" y="14" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="85" y="13" layer="1" width="625" height="22" var="origin_it" text="E:/Projects/SmhWorld/trunk/12 交换目录/美术类/装扮类资源"/>
+  <Button label="保存" skin="png.comp.button" x="719" y="12" layer="1" var="save_btn" width="75" height="55"/>
+  <Button label="处理" skin="png.comp.button" x="632" y="285" layer="1" var="excute_btn" width="170" height="86"/>
+</View>

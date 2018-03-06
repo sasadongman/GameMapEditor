@@ -1,0 +1,4 @@
+<View width="810" height="380" sceneColor="0xffffff" layers="2,1,0,0,第 2 层;1,1,0,1,第 1 层">
+  <Image skin="png.comp.blank" x="0" y="0" layer="1" width="810" height="380"/>
+  <Label text="png裁剪工具" styleSkin="png.comp.label" layer="2" color="0x0" bold="true" size="14" centerX="0" top="10"/>
+</View>

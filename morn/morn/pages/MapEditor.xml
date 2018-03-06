@@ -1,0 +1,68 @@
+<View width="1000" height="600" sceneColor="0xffffff" layers="1,1,2,0,工具栏;2,1,2,0,资源;5,1,2,0,状态栏;3,1,2,1,鼠标交互;4,1,2,1,图层" left="0" right="0" top="0" bottom="0">
+  <Box layers="1,1,0,0,第 1 层" layer="4" var="layer_box" y="40" x="416"/>
+  <Image skin="png.comp.纯色_透明" layer="3" left="416" right="0" top="0" bottom="0" var="interactive_im"/>
+  <Box layers="2,1,0,0,第 2 层;1,1,0,1,第 1 层" layer="5" bottom="0" left="416" right="0" height="25">
+    <Image skin="jpg.comp.纯色_黑" layer="1" right="0" left="0" bottom="0" top="0"/>
+    <Label text="坐标：" styleSkin="png.comp.label" y="1" layer="2" stroke="0x0" color="0xffffff" x="4"/>
+    <TextInput text="0" skin="png.comp.textinput" x="39" y="1" layer="2" var="px_lb" restrict="-0123456789" width="35" height="22" editable="false"/>
+    <TextInput text="0" skin="png.comp.textinput" x="76" y="1" layer="2" var="py_lb" restrict="-0123456789" width="35" height="22" editable="false"/>
+    <Label text="位置：" styleSkin="png.comp.label" y="1" layer="2" stroke="0x0" color="0xffffff" x="126"/>
+    <TextInput text="0" skin="png.comp.textinput" x="161" y="1" layer="2" var="tx_lb" restrict="-0123456789" width="35" height="22" editable="false"/>
+    <TextInput text="0" skin="png.comp.textinput" x="198" y="1" layer="2" var="ty_lb" restrict="-0123456789" width="35" height="22" editable="false"/>
+    <Label text="裁剪：" styleSkin="png.comp.label" y="1" layer="2" stroke="0x0" color="0xffffff" x="255"/>
+    <TextInput text="0" skin="png.comp.textinput" x="290" y="1" layer="2" var="cut_width_lb" restrict="-0123456789" width="35" height="22" editable="false"/>
+    <TextInput text="0" skin="png.comp.textinput" x="327" y="1" layer="2" var="cut_height_lb" restrict="-0123456789" width="35" height="22" editable="false"/>
+  </Box>
+  <Box layers="2,1,4,0,预览;5,1,4,0,列表;3,1,4,0,目录;4,1,4,0,第 4 层;1,1,4,1,第 1 层" layer="2" top="23" width="416" bottom="0" left="0">
+    <Image skin="png.comp.bg" layer="1" left="0" right="0" top="0" bottom="0"/>
+    <Button label="编辑资源" skin="png.comp.button" x="2" y="2" layer="4" width="50" height="23" var="res_btn"/>
+    <TextInput skin="png.comp.textinput" y="2" layer="4" height="22" var="res_lb" editable="false" right="3" left="53" x="0"/>
+    <Button label="地图配置" skin="png.comp.button" x="2" y="26" layer="4" width="50" height="23" var="mapConf_btn"/>
+    <TextInput skin="png.comp.textinput" y="26" layer="4" height="22" var="mapConf_lb" right="3" left="53" x="53" editable="false"/>
+    <Button label="发布资源" skin="png.comp.button" x="2" y="48" layer="4" width="50" height="23" var="publish_res_btn"/>
+    <TextInput skin="png.comp.textinput" y="49" layer="4" height="22" var="publish_lb" editable="false" right="53" left="53" x="53" width="360"/>
+    <Button label="发布" skin="png.comp.button" x="365" y="48" layer="4" width="50" height="23" var="publish_btn" right="3"/>
+    <Tree layers="1,1,0,0,第 1 层" layer="3" spaceLeft="10" spaceBottom="2" var="tree" scrollBarSkin="png.comp.vscroll" bottom="303" top="78" x="0" y="0" width="150">
+      <Box layers="1,1,0,0,第 1 层" layer="1" name="render" width="200">
+        <Clip skin="png.comp.clip_selectBox" layer="1" clipY="2" name="selectBox" x="15" width="135" alpha="0.7" y="0" height="20"/>
+        <Clip skin="png.comp.clip_tree_arrow" y="2" layer="1" clipY="2" name="arrow"/>
+        <Clip skin="png.comp.clip_tree_folder" x="16" layer="1" clipY="3" name="folder"/>
+        <Label styleSkin="png.common.label" x="36" y="0" layer="1" name="label"/>
+      </Box>
+    </Tree>
+    <List layers="1,1,0,0,第 1 层" layer="5" x="150" repeatX="2" vScrollBarSkin="png.comp.vscroll" width="263" spaceY="5" top="78" bottom="303" var="res_list" y="26" spaceX="5">
+      <Box layers="2,1,1,0,第 2 层;1,1,1,0,第 1 层;3,1,1,0,第 3 层" layer="1" name="render" width="120" height="100" mouseChildren="false">
+        <Clip skin="png.comp.clip_selectBox" x="0" y="0" layer="3" name="selectBox" width="120" height="100"/>
+        <Image layer="1" width="120" height="100" name="im" x="0" y="0"/>
+        <Label styleSkin="png.comp.label" x="0" y="0" layer="2" name="url_lb" width="120" multiline="true" wordWrap="true" text="label" height="100"/>
+      </Box>
+    </List>
+    <Box layers="2,1,2,0,第 2 层;4,1,2,0,第 4 层;1,1,2,0,第 1 层" layer="2" var="preview_box" height="300" x="3" width="410" bottom="3" y="183">
+      <Image skin="png.comp.blank" layer="1" left="0" right="0" top="0" bottom="0"/>
+      <Box layers="2,1,0,0,第 2 层;1,1,0,1,第 1 层" layer="4" x="205" y="150" var="preview_line_box">
+        <Image x="0" y="0" layer="1" var="preview_im"/>
+        <Image x="0" y="0" layer="2" var="preview_tile_im" mouseEnabled="false"/>
+      </Box>
+      <Label text="注册点：" styleSkin="png.comp.label" y="270" layer="2" stroke="0x0" color="0xffffff" x="125"/>
+      <TextInput text="0" skin="png.comp.textinput" x="172" y="270" layer="2" var="pos_x_lb" restrict="-0123456789" width="33" height="22" editable="false"/>
+      <TextInput text="0" skin="png.comp.textinput" x="208" y="270" layer="2" var="pos_y_lb" restrict="-0123456789" width="33" height="22" editable="false"/>
+      <Button label="保存" skin="png.comp.button" x="252" y="269" layer="2" width="50" height="23" var="pos_btn"/>
+      <ComboBox labels="层级,地上,地面,地下" skin="png.comp.combobox" x="50" y="269" layer="2" selectedIndex="0" width="62" height="23" var="pos_layer_cb"/>
+    </Box>
+  </Box>
+  <Button label="新建" skin="png.comp.button" x="0" y="0" layer="1" width="50" height="23" var="new_btn" toolTip="Ctrl+N"/>
+  <Button label="保存" skin="png.comp.button" x="100" y="0" layer="1" width="50" height="23" var="save_btn" toolTip="Ctrl+S"/>
+  <CheckBox label="地上" skin="png.comp.checkbox" x="287" y="4" layer="1" var="up_cb" selected="true"/>
+  <CheckBox label="网格" skin="png.comp.checkbox" x="244" y="4" layer="1" var="grid_cb" selected="true"/>
+  <CheckBox label="路点" skin="png.comp.checkbox" x="201" y="4" layer="1" var="point_cb" selected="true"/>
+  <Button label="打开" skin="png.comp.button" x="50" y="0" layer="1" width="50" height="23" var="open_btn" toolTip="Ctrl+O"/>
+  <CheckBox label="地面" skin="png.comp.checkbox" x="330" y="4" layer="1" var="ground_cb" selected="true"/>
+  <CheckBox label="地下" skin="png.comp.checkbox" x="373" y="4" layer="1" var="down_cb" selected="true"/>
+  <Tab labels="路点(F1),地上(F2),地面(F3),地下(F4)" skin="png.comp.tab" layer="1" direction="horizontal" buttonMode="true" labelColors="0x000000,0x000000,0xff0000" layers="1,1,0,0,第 1 层" labelBold="true" scaleX="1.2" scaleY="1.5" var="layer_type_tab" left="416" top="0"/>
+  <Button label="擦除(Ctrl+Q)" skin="png.comp.button" layer="1" width="120" height="40" labelBold="true" buttonMode="true" labelSize="20" toggle="true" labelColors="0x000000,0x000000,0xff0000" var="clear_btn" x="755" y="0"/>
+  <Button label="填充(Ctrl+A)" skin="png.comp.button" layer="1" width="120" height="40" labelBold="true" labelSize="20" labelColors="0x000000,0x000000,0xff0000" var="fill_btn" x="875" y="0" buttonMode="true"/>
+  <Button label="属性" skin="png.comp.button" x="150" y="0" layer="1" width="50" height="23" var="modify_btn"/>
+  <Button label="撤销(Ctrl+Z)" skin="png.comp.button" layer="1" width="120" height="40" labelBold="true" labelSize="20" labelColors="0x000000,0x000000,0xff0000" var="undo_btn" x="995" y="0" buttonMode="true"/>
+  <Button label="重做(Ctrl+Y)" skin="png.comp.button" layer="1" width="120" height="40" labelBold="true" labelSize="20" labelColors="0x000000,0x000000,0xff0000" var="redo_btn" x="1115" y="0" buttonMode="true"/>
+  <Button label="裁剪" skin="png.comp.button" layer="1" width="60" height="40" labelBold="true" labelSize="20" labelColors="0x000000,0x000000,0xff0000" var="cut_btn" x="1240" y="0" buttonMode="true" toggle="true"/>
+</View>

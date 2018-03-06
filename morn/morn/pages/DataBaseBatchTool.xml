@@ -1,0 +1,10 @@
+<View width="810" height="380" sceneColor="0xffffff" layers="1,1,0,0,第 1 层">
+  <Label text="txt文件夹(Flash)：" styleSkin="png.comp.label" x="16" y="79" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="110" y="78" layer="1" width="675" height="22" var="flash_txt_ti" text="E:/Publish/发布工程/bin/assets/staticConfig"/>
+  <Button label="处理" skin="png.comp.button" x="642" y="273" layer="1" var="excute_btn" width="157" height="95"/>
+  <Label text="比对as文件夹：" styleSkin="png.comp.label" x="16" y="51" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="110" y="50" layer="1" width="675" height="22" var="check_folder_ti" text="E:/Publish/发布工程/src/smh/model/resource/staticConfig/txt"/>
+  <Button label="保存" skin="png.comp.button" x="708" y="10" layer="1" var="record_btn" width="89" height="31"/>
+  <Label text="服务器列表：" styleSkin="png.comp.label" x="16" y="16" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="95" y="14" layer="1" width="595" height="22" var="serverList_ti" text="http://192.168.0.161:52000/fmy-game-service/config/server/list"/>
+</View>

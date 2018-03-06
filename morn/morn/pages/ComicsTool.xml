@@ -1,0 +1,40 @@
+<View width="810" height="380" sceneColor="0xffffff" layers="1,1,0,0,第 1 层;2,1,0,1,第 2 层">
+  <Image skin="png.comp.blank" x="0" y="0" layer="2" width="810" height="380"/>
+  <Label text="漫画裁剪工具" styleSkin="png.comp.label" layer="1" color="0x0" bold="true" size="14" centerX="0" top="10" x="0" y="0"/>
+  <Box layers="1,1,0,0,第 1 层" layer="1" x="16" y="74">
+    <Label text="起始X：" styleSkin="png.comp.label" x="75" layer="1"/>
+    <TextInput skin="png.comp.textinput" x="116" y="1" layer="1" width="35" height="22" var="left_x_it" text="678" restrict="0-9" maxChars="4"/>
+    <Label text="左页" styleSkin="png.comp.label" y="1" layer="1" bold="true"/>
+    <Label text="起始Y：" styleSkin="png.comp.label" x="161" layer="1" y="0"/>
+    <TextInput skin="png.comp.textinput" x="202" y="1" layer="1" width="35" height="22" var="left_y_it" text="184" restrict="0-9" maxChars="4"/>
+    <Label text="宽度：" styleSkin="png.comp.label" x="251" layer="1" y="0"/>
+    <TextInput skin="png.comp.textinput" x="285" y="1" layer="1" width="35" height="22" var="left_w_it" text="2512" restrict="0-9" maxChars="4"/>
+    <Label text="高度：" styleSkin="png.comp.label" x="337" layer="1" y="0"/>
+    <TextInput skin="png.comp.textinput" x="369" y="1" layer="1" width="35" height="22" var="left_h_it" text="4184" restrict="0-9" maxChars="4"/>
+  </Box>
+  <Box layers="1,1,0,0,第 1 层" layer="1" x="16" y="107">
+    <Label text="起始X：" styleSkin="png.comp.label" x="75" layer="1"/>
+    <TextInput skin="png.comp.textinput" x="116" y="1" layer="1" width="35" height="22" var="right_x_it" text="165" restrict="0-9" maxChars="4"/>
+    <Label text="右页" styleSkin="png.comp.label" y="1" layer="1" bold="true"/>
+    <Label text="起始Y：" styleSkin="png.comp.label" x="161" layer="1" y="0"/>
+    <TextInput skin="png.comp.textinput" x="202" y="1" layer="1" width="35" height="22" var="right_y_it" text="180" restrict="0-9" maxChars="4"/>
+    <Label text="宽度：" styleSkin="png.comp.label" x="251" layer="1" y="0"/>
+    <TextInput skin="png.comp.textinput" x="285" y="1" layer="1" width="35" height="22" var="right_w_it" text="2512" restrict="0-9" maxChars="4"/>
+    <Label text="高度：" styleSkin="png.comp.label" x="337" layer="1" y="0"/>
+    <TextInput skin="png.comp.textinput" x="369" y="1" layer="1" width="35" height="22" var="right_h_it" text="4184" restrict="0-9" maxChars="4"/>
+  </Box>
+  <Box layers="1,1,0,0,第 1 层" layer="1" x="16" y="139">
+    <Label text="切图限制" styleSkin="png.comp.label" y="1" layer="1" bold="true"/>
+    <Label text="宽度：" styleSkin="png.comp.label" x="76" layer="1" y="0"/>
+    <TextInput skin="png.comp.textinput" x="110" y="1" layer="1" width="35" height="22" var="limit_w_it" text="0" restrict="0-9" maxChars="4"/>
+    <Label text="高度：" styleSkin="png.comp.label" x="162" layer="1" y="0"/>
+    <TextInput skin="png.comp.textinput" x="194" y="1" layer="1" width="35" height="22" var="limit_h_it" text="0" restrict="0-9" maxChars="4"/>
+    <Label text="压缩率：" styleSkin="png.comp.label" x="248" layer="1" y="0"/>
+    <TextInput skin="png.comp.textinput" x="294" y="1" layer="1" width="35" height="22" var="quantization_it" text="100" restrict="0-9" maxChars="4"/>
+  </Box>
+  <Box layers="1,1,0,0,第 1 层" layer="1" x="16" y="44">
+    <ComboBox labels="4格,6格" skin="png.comp.combobox" x="73" layer="1" selectedIndex="0" width="42" height="23" var="mode_cb"/>
+    <Label text="模式" styleSkin="png.comp.label" layer="1" bold="true" y="1"/>
+    <CheckBox label="删除原图" skin="png.comp.checkbox" x="138" y="0" layer="1" var="delete_cb" selected="true"/>
+  </Box>
+</View>

@@ -1,0 +1,13 @@
+<!-- 
+    fileInfo			待解析的文件信息
+    name                解析文件列表
+    url                 待解析的文件
+    packageURL          解析后as文件的包路径
+	saveURL             解析后as文件的生成路径
+-->
+<?xml version="1.0" encoding="utf-8" ?>
+<data root="">
+	<fileInfo name="NetMessage" url="NetMessage.h" packageURL="smh.service.socket" saveURL=""/>
+	<fileInfo name="result" url="result.h" packageURL="smh.service.socket.result" saveURL="\result"/>
+	<fileInfo name="gameEnum" url="gameEnum.h" packageURL="smh.service.socket.gameEnum" saveURL="\gameEnum"/>
+</data>

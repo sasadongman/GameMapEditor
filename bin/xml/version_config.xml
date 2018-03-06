@@ -1,0 +1,28 @@
+<!--
+originFolder:原始目录，可多个
+targetFolder:目标目录，可多个
+ignoreExtension:忽略的文件后缀，使用","隔开
+leafNodeFolder:正则表达式的叶节点文件夹，此类文件夹有版本号，作为文件夹内的所有文件统一的版本号
+-->
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<item label="测试OSS"	clearOld="1"	origin="E:\Projects\SmhWorld\trunk\05 源代码\网页端\Main\SmhWorld\bin\"						target="E:\Publish\OSS\测试\develop\"/>
+	<item label="预发布OSS"	clearOld="1"	origin="E:\Publish\发布工程\bin\"															target="E:\Publish\OSS\测试\SmhWorld\"/>
+	<item label="正式OSS"	clearOld="1"	origin="E:\Publish\发布工程\bin\"															target="E:\Publish\OSS\官网\SmhWorld\"/>
+	<item label="测试服107"	clearOld="0"	origin="E:\Projects\SmhWorld\trunk\05 源代码\网页端\Main\SmhWorld\bin\"						target="G:\SmhWorld\"/>
+	<item label="审核服"	clearOld="0"	origin="E:\Projects\SmhWorld\branches\shenhe20160624\05 源代码\网页端\Main\SmhWorld\bin\"	target="H:\dev\"/>
+	
+	<ignoreExtension>fla,html,js,txt,xml</ignoreExtension>
+	<!--
+	<leafNodeFolder pattern="boss/.+"/>
+	<leafNodeFolder pattern="horse/.+"/>
+	<leafNodeFolder pattern="monster/.+"/>
+	<leafNodeFolder pattern="multtoy/.+"/>
+	<leafNodeFolder pattern="partner/.+"/>
+	<leafNodeFolder pattern="pet/.+"/>
+	<leafNodeFolder pattern="role/.+"/>
+	<leafNodeFolder pattern="scenes/.+/tiles"/>
+	<leafNodeFolder pattern="weapon/.+"/>
+	<leafNodeFolder pattern="wing/.+"/>
+	-->
+</data>

@@ -1,0 +1,14 @@
+<View width="810" height="380" sceneColor="0xffffff" layers="1,1,0,0,第 1 层">
+  <Label text="服务端propto文件夹：" styleSkin="png.comp.label" x="12" y="11" layer="1"/>
+  <Label text="Flash proto文件夹：" styleSkin="png.comp.label" x="13" y="39" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="134" y="10" layer="1" width="560" height="22" var="server_it" text="E:/Projects/SmhWorld/trunk/05 源代码/ServerPublic/proto"/>
+  <Button label="保存" skin="png.comp.button" x="723" y="9" layer="1" width="75" height="77" var="record_btn"/>
+  <TextInput skin="png.comp.textinput" x="134" y="39" layer="1" width="560" height="22" text="E:/Projects/SmhWorld/trunk/05 源代码/网页端/Main/SmhWorld/src_proto" var="as3_it"/>
+  <Button label="生成_gen_as3.cmd" skin="png.comp.button" x="16" y="278" layer="1" var="cmd_btn" width="123" height="88"/>
+  <Button label="转移.as" skin="png.comp.button" x="152" y="278" layer="1" var="as_btn" width="129" height="88"/>
+  <Button label="处理" skin="png.comp.button" x="628" y="279" layer="1" var="excute_btn" width="170" height="88"/>
+  <Label text="Laya proto文件夹：" styleSkin="png.comp.label" x="13" y="67" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="134" y="67" layer="1" width="560" height="22" text="E:/Projects/SmhWorld/trunk/05 源代码/网页端/Main/LayaAirProject/src_proto" var="laya_it"/>
+  <CheckBox skin="png.comp.checkbox" x="698" y="71" layer="1" var="laya_socket_cb"/>
+  <CheckBox skin="png.comp.checkbox" x="698" y="42" layer="1" var="as3_socket_cb" selected="true"/>
+</View>

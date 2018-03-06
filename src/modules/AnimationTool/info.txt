@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+type					类型，默认为0，不填为0		0表示非匀速动画，1表示匀速动画
+frameRate			帧频，默认为24，不填为0，type为1时必须填
+
+sec					1秒内信息	type为1时此部分没意义，不需要填
+	id				0,1,2...
+
+	frame			1帧信息
+		id			1,2,3...24
+		image		空表示非关键帧,1...数字表示关键帧的对应png名字,“*”表示循环自第一帧开始,“#”表示在此帧结束不循环
+-->
+<data type="0" frameRate="24">
+	<sec id="0">
+		<frame id="1" image="1"/>
+		<frame id="2" image=""/>
+		<frame id="3" image=""/>
+		<frame id="4" image=""/>
+		<frame id="5" image=""/>
+		<frame id="6" image=""/>
+		<frame id="7" image=""/>
+		<frame id="8" image=""/>
+		<frame id="9" image=""/>
+		<frame id="10" image="2"/>
+		<frame id="11" image=""/>
+		<frame id="12" image=""/>
+		<frame id="13" image=""/>
+		<frame id="14" image=""/>
+		<frame id="15" image=""/>
+		<frame id="16" image="3"/>
+		<frame id="17" image="4"/>
+		<frame id="18" image=""/>
+		<frame id="19" image=""/>
+		<frame id="20" image=""/>
+		<frame id="21" image="5"/>
+		<frame id="22" image=""/>
+		<frame id="23" image=""/>
+		<frame id="24" image=""/>
+	</sec>
+	<sec id="1">
+		<frame id="1" image="6"/>
+		<frame id="2" image=""/>
+		<frame id="3" image="7"/>
+		<frame id="4" image="8"/>
+		<frame id="5" image=""/>
+		<frame id="6" image=""/>
+		<frame id="7" image=""/>
+		<frame id="8" image=""/>
+		<frame id="9" image=""/>
+		<frame id="10" image=""/>
+		<frame id="11" image=""/>
+		<frame id="12" image="*"/>
+		<frame id="13" image=""/>
+		<frame id="14" image=""/>
+		<frame id="15" image=""/>
+		<frame id="16" image=""/>
+		<frame id="17" image=""/>
+		<frame id="18" image=""/>
+		<frame id="19" image=""/>
+		<frame id="20" image=""/>
+		<frame id="21" image=""/>
+		<frame id="22" image=""/>
+		<frame id="23" image=""/>
+		<frame id="24" image=""/>
+	</sec>
+</data>

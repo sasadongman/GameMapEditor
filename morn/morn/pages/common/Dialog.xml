@@ -1,0 +1,7 @@
+<Dialog width="400" height="300" sceneColor="0xffffff" layers="2,1,0,0,第 2 层;1,1,0,1,第 1 层">
+  <Image skin="png.comp.bg" layer="1" top="0" bottom="0" right="0" left="0"/>
+  <Button skin="png.comp.btn_close" x="367" y="3" layer="2" name="close" var="close_btn"/>
+  <Button label="确定" skin="png.comp.button" x="106" y="258" layer="2" name="ok" var="ok_btn"/>
+  <Button label="取消" skin="png.comp.button" x="224" y="258" layer="2" name="cancel" var="cancel_btn"/>
+  <Label text="label" styleSkin="png.comp.label" x="43" y="51" layer="2" width="320" height="183" multiline="true" wordWrap="true" var="content_lb" size="20"/>
+</Dialog>

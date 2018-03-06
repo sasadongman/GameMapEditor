@@ -1,0 +1,19 @@
+<View sceneColor="0xffffff" layers="1,1,4,0,星级名称;11,1,4,0,卡牌名字;9,1,4,1,卡牌上层;4,1,4,1,边框;3,1,4,1,球;8,1,4,0,卡牌下层" width="371" height="532">
+  <Box layers="1,1,0,0,第 1 层" layer="8" var="card_box" x="0" y="0"/>
+  <Box layers="1,1,0,0,第 1 层" layer="3" x="0" y="0" var="ball_box"/>
+  <Clip skin="png.comp.卡牌.clip_card_border" x="0" y="0" layer="4" clipX="4" clipY="1" var="border_clip" index="2"/>
+  <Box layers="1,1,0,0,第 1 层" layer="9" var="card_up_box" x="0" y="0"/>
+  <Box layers="2,1,0,0,第 2 层;1,1,0,0,第 1 层" layer="11" x="57" y="394" var="label_box">
+    <Image skin="png.comp.卡牌.卡牌主界面卡牌名字" layer="1" var="name_im"/>
+    <Label text="label" styleSkin="png.common.text.label" x="51" y="9" layer="1" width="160" height="18" align="center" color="0xffcc00" var="name_label"/>
+    <Label styleSkin="png.common.text.label" x="15" y="32" layer="1" width="226" align="center" color="0xffffff" wordWrap="true" multiline="true" text="67" stroke="0x0,1,5,5,4,2" var="introduceInfo_label"/>
+  </Box>
+  <Box layers="1,1,0,0,第 1 层" layer="1" y="463" var="star_box" x="125">
+    <Clip skin="png.comp.卡牌.clip_card_star" x="0" layer="1" clipX="3" clipY="1" name="star1_clip"/>
+    <Clip skin="png.comp.卡牌.clip_card_star" layer="1" clipX="3" clipY="1" index="0" name="star2_clip" x="24"/>
+    <Clip skin="png.comp.卡牌.clip_card_star" x="48" layer="1" clipX="3" clipY="1" index="0" name="star3_clip"/>
+    <Clip skin="png.comp.卡牌.clip_card_star" x="72" layer="1" clipX="3" clipY="1" index="0" name="star4_clip"/>
+    <Clip skin="png.comp.卡牌.clip_card_star" x="96" layer="1" clipX="3" clipY="1" index="0" name="star5_clip"/>
+  </Box>
+  <Clip skin="png.comp.卡牌.clip_种族" x="74" y="72" layer="1" clipX="8" clipY="1" var="race_clip"/>
+</View>

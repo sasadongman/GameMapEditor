@@ -1,0 +1,4 @@
+<Dialog sceneColor="0xffffff" layers="2,1,1,0,第 2 层;1,1,1,1,第 1 层" width="900" height="50">
+  <Image skin="png.comp.blank" layer="1" left="0" right="0" top="0" bottom="0"/>
+  <Label text="提示文字！" styleSkin="png.comp.label" x="0" y="5" layer="2" align="center" bold="true" stroke="0x0" color="0xffffff" width="900" size="32" height="40" var="content_lb"/>
+</Dialog>

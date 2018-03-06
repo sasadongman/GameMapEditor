@@ -1,0 +1,21 @@
+<View width="810" height="380" sceneColor="0xffffff" layers="1,1,0,0,第 1 层">
+  <Label text="HOST：" styleSkin="png.comp.label" x="16" y="16" layer="1"/>
+  <Label text="txt文件夹(Flash)：" styleSkin="png.comp.label" x="16" y="178" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="90" y="15" layer="1" width="172" height="22" var="host_ti" text="192.168.0.231" restrict=".0-9"/>
+  <TextInput skin="png.comp.textinput" x="110" y="177" layer="1" width="675" height="22" var="flash_txt_ti" text="E:/Publish/发布工程/bin/assets/staticConfig"/>
+  <Label text="PORT：" styleSkin="png.comp.label" x="16" y="42" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="90" y="41" layer="1" width="172" height="22" var="port_ti" text="3306" restrict="0-9"/>
+  <Label text="账号：" styleSkin="png.comp.label" x="16" y="94" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="90" y="93" layer="1" width="172" height="22" var="username_ti" text="guest"/>
+  <Label text="密码：" styleSkin="png.comp.label" x="16" y="120" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="90" y="119" layer="1" width="172" height="22" var="password_ti" text="123456"/>
+  <Label text="database：" styleSkin="png.comp.label" x="16" y="68" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="90" y="67" layer="1" width="172" height="22" var="database_ti" text="smh_type_yf"/>
+  <Label text="txt文件夹(Laya)：" styleSkin="png.comp.label" x="16" y="203" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="110" y="202" layer="1" width="675" height="22" var="laya_txt_ti" text="E:/Projects/SmhWorld/trunk/05 源代码/网页端/Main/LayaAirProject/bin/h5/staticConfig"/>
+  <CheckBox skin="png.comp.checkbox" x="790" y="205" layer="1" var="laya_txt_cb"/>
+  <Button label="处理" skin="png.comp.button" x="642" y="273" layer="1" var="excute_btn" width="157" height="95"/>
+  <CheckBox skin="png.comp.checkbox" x="790" y="181" layer="1" var="as3_txt_cb" selected="true"/>
+  <Label text="比对as文件夹：" styleSkin="png.comp.label" x="16" y="150" layer="1"/>
+  <TextInput skin="png.comp.textinput" x="110" y="149" layer="1" width="675" height="22" var="check_folder_ti" text="E:/Publish/发布工程/src/smh/model/resource/staticConfig/txt"/>
+</View>

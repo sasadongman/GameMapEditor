@@ -1,0 +1,18 @@
+<Dialog width="400" height="200" sceneColor="0xffffff" layers="2,1,0,0,第 2 层;1,1,0,1,第 1 层">
+  <Image skin="png.comp.bg" layer="1" left="0" right="0" top="0" bottom="0"/>
+  <Label text="地图大小" styleSkin="png.comp.label" x="19" y="44" layer="2" bold="true"/>
+  <Label text="块大小" styleSkin="png.comp.label" x="209" y="44" layer="2" bold="true"/>
+  <Label text="宽度：" styleSkin="png.comp.label" x="19" y="75" layer="2"/>
+  <Label text="高度：" styleSkin="png.comp.label" x="19" y="104" layer="2"/>
+  <Label text="宽度：" styleSkin="png.comp.label" x="209" y="73" layer="2"/>
+  <Label text="高度：" styleSkin="png.comp.label" x="209" y="102" layer="2"/>
+  <TextInput text="20" skin="png.comp.textinput" x="59" y="75" layer="2" restrict="0-9" var="width_ti"/>
+  <TextInput text="20" skin="png.comp.textinput" x="59" y="105" layer="2" restrict="0-9" var="height_ti"/>
+  <TextInput text="88" skin="png.comp.textinput" x="249" y="74" layer="2" restrict="0-9" var="tileWidth_ti"/>
+  <TextInput text="44" skin="png.comp.textinput" x="249" y="104" layer="2" restrict="0-9" var="tileHeight_ti"/>
+  <Label text="1800 x 900 像素点" styleSkin="png.comp.label" x="20" y="137" layer="2" var="total_lb"/>
+  <Button label="确定" skin="png.comp.button" x="160" y="161" layer="2" name="ok" var="ok_btn"/>
+  <Button skin="png.comp.btn_close" x="369" y="3" layer="2" name="close"/>
+  <Label text="新地图" styleSkin="png.comp.label" x="9" y="4" layer="2" bold="true" var="name_lb"/>
+  <CheckBox label="交错" skin="png.comp.checkbox" x="334" y="137" layer="2" var="cross_cb"/>
+</Dialog>

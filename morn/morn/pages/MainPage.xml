@@ -1,0 +1,29 @@
+<View width="900" height="600" sceneColor="0xffffff" layers="2,1,2,0,第 2 层;1,1,2,0,第 1 层;3,1,2,0,第 3 层">
+  <ViewStack layers="18,1,0,0,DataBaseBatchTool;17,0,0,0,ImageAddSpace;16,0,0,0,ImageCompress;15,0,0,0,MapEditor;14,0,0,0,DataBaseTool;13,0,0,0,CardBatchTool;12,0,0,0,ComicsTool;11,0,0,1,CutTool;10,0,0,1,CardNameTool;9,0,0,1,AvatarBatchTool;5,0,0,1,VersionTooll;4,0,0,1,EnumTool;2,0,0,1,ProtoTool;8,0,0,1,ClipTool;6,0,0,1,AnimationTool;3,0,0,1,AvatarNameTool;1,0,0,1,AvatarTool" layer="3" var="page_vs" left="80" top="5" right="10" bottom="210" x="0" y="0">
+    <UIView source="AvatarTool.xml" layer="1" runtime="modules.AvatarTool.AvatarTool" name="item0"/>
+    <UIView source="AvatarNameTool.xml" x="0" y="0" layer="3" name="item1" runtime="modules.AvatarNameTool.AvatarNameTool"/>
+    <UIView source="AnimationTool.xml" x="0" y="0" layer="6" name="item2" runtime="modules.AnimationTool.AnimationTool"/>
+    <UIView source="ClipTool.xml" x="0" y="0" layer="8" name="item3" runtime="modules.ClipTool.ClipTool"/>
+    <UIView source="ProtoTool.xml" x="0" y="0" layer="2" runtime="modules.ProtoTool.ProtoTool" name="item4"/>
+    <UIView source="EnumTool.xml" x="0" y="0" layer="4" name="item5" runtime="modules.EnumTool.EnumTool"/>
+    <UIView source="VersionTool.xml" x="0" y="0" layer="5" name="item6" runtime="modules.VersionTool.VersionTool"/>
+    <UIView source="AvatarBatchTool.xml" x="0" y="0" layer="9" runtime="modules.AvatarTool.AvatarBatchTool" name="item7"/>
+    <UIView source="CardNameTool.xml" x="0" y="0" layer="10" name="item8" runtime="modules.CardNameTool.CardNameTool"/>
+    <UIView source="CutTool.xml" x="0" y="0" layer="11" name="item9" runtime="modules.CutTool.CutTool"/>
+    <UIView source="ComicsTool.xml" x="0" y="0" layer="12" name="item10" runtime="modules.ComicsTool.ComicsTool"/>
+    <UIView source="CardBatchTool.xml" x="0" y="0" layer="13" runtime="modules.CardBatchTool.CardBatchTool" name="item11"/>
+    <UIView source="DataBaseTool.xml" x="0" y="0" layer="14" runtime="modules.DataBaseTool.DataBaseTool" name="item12"/>
+    <UIView source="MapEditor.xml" x="0" y="0" layer="15" name="item13" runtime="modules.MapEditor.MapEditor" width="810" height="380"/>
+    <UIView source="ImageCompress.xml" x="0" y="0" layer="16" runtime="modules.ImageCompress.ImageCompress" name="item14"/>
+    <UIView source="ImageAddSpace.xml" x="0" y="0" layer="17" name="item15" runtime="modules.ImageAddSpace.ImageAddSpace"/>
+    <UIView source="DataBaseBatchTool.xml" x="0" y="0" layer="18" name="item16" runtime="modules.DataBaseTool.DataBaseBatchTool"/>
+  </ViewStack>
+  <Tab skin="png.comp.tab" x="0" y="30" layer="1" direction="vertical" var="page_tab" layers="1,1,0,0,第 1 层" labelBold="true" space="2"/>
+  <Button label="应用目录" skin="png.comp.button" layer="1" left="2" bottom="70" var="applicationDirectory_bt"/>
+  <Button label="存储目录" skin="png.comp.button" layer="1" left="2" bottom="40" var="applicationStorageDirectory_bt"/>
+  <Label text="ADMIN 1.33" styleSkin="png.comp.label" layer="1" left="5" bottom="10" var="ver_lb" x="1" y="-565"/>
+  <ComboBox labels="label1,label2" skin="png.comp.combobox" x="1" y="5" layer="1" width="78" height="23" var="permission_cb"/>
+  <TextArea skin="png.comp.textarea" layer="2" width="810" height="200" var="log_ta" vScrollBarSkin="png.comp.vscroll" bottom="10" right="10" left="80" editable="false" x="0" y="0"/>
+  <Button label="隐藏日志" skin="png.comp.button" layer="2" var="log_btn" right="30" bottom="10" x="0" y="0"/>
+  <Button label="清除日志" skin="png.comp.button" layer="2" bottom="10" right="110" var="clear_log_btn"/>
+</View>
